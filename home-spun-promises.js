@@ -35,6 +35,7 @@ function doSomething() {
     console.log('doSomething');
     return new Promise(function(resolve) {
         var value = 42;
+        // large timeout simulates asynchronous calls
         setTimeout(function() {
             resolve(value);
         }, 1000);
